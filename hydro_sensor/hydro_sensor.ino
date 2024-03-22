@@ -5,6 +5,7 @@ enum display_state {A,B,C,D};
 
 //initialize servo object
 Servo myservo;
+dht11 DHT ;
 
 main_state CurrState_main;
 display_state CurrState_display;
@@ -52,6 +53,7 @@ bool alarm_state_flag = false;
 #define OUT_FAN_PIN 0
 #define OUT_ALARM_PIN 0
 #define OUT_LED_PIN 0
+#define AOUT_MOIST_PIN A0
 
 #define IN_HUMID_PIN 3
 #define IN_TRAY_PIN 0
@@ -266,6 +268,7 @@ int read_photoresistor(){
 
 float read_soil_moisture(){
   // calculate soild moisture percentage (max being 100, analog read is 1000)
+  int moisture = (analogRead(AOUT_MOIST_PIN) / 2) ;
   return min(analogRead(IN_TRAY_PIN)/10, 100);   
 }
 
