@@ -10,6 +10,7 @@ enum display_state {SOIL,HUMID,TEMP,LIGHT,FIRE,TRAY};
 
 //initialize servo object
 Servo myservo;
+dht11 DHT ;
 
 LiquidCrystal lcd(11, 12, 6, 7, 4, 5);
 dht11 DHT ;
@@ -336,6 +337,7 @@ int read_photoresistor(){
 
 float read_soil_moisture_percent(){
   // calculate soild moisture percentage (max being 100, analog read is 1000)
+  int moisture = (analogRead(AOUT_MOIST_PIN) / 2) ;
   return min(analogRead(IN_TRAY_PIN)/10, 100);   
 }
 
