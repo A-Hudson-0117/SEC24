@@ -38,6 +38,18 @@ DANMAN:
 # LCD output
 # moist sensor
 
+LOGIC
+------
+if (light_sense < 2) -> light on 
+if ( soil_moisture < 5%) -> turn servo to open water valve && reset moist_time
+        if ((current_timer - moist_timer) < 1000)
+
+if ( bump == 'true') -> plant tray empty
+if (humid == 'true') -> turn on motor (fan)
+
+
+
+
 
 __ documentation 
 todo __

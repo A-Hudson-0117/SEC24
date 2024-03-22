@@ -4,11 +4,11 @@
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(11, 12, 6, 7, 4, 5);
 
-void show(int i){
+void writeLCD(string sensor, string data){
     lcd.setCursor(0, 0);
-    lcd.print("data");
-    lcd.setCursor(7, 0);
-    lcd.print(i);
+    lcd.print(sensor);
+    lcd.setCursor(0, 1);
+    lcd.print(data);
 }
 
 void setup() {
