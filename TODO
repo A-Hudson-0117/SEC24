@@ -1,0 +1,44 @@
+__ SHORT TERM __
+find light sensor
+find fire sensor
+use buzzer?
+
+
+
+
+
+
+__ project componets needed or desiered __
+water sensor
+mousture sensor
+servo for water control()
+motor for fan usage (29)
+3 watt led
+tempature & humidity sensor
+    make humid adaptive to run water
+LCD screen for screening
+bumper sensor for making sure tray is installed
+keypad for selecting mode/ entering input
+fire sensor ? 
+light sensor ?  
+    maybe use photoresistive element (26)
+buzzer for alarm?
+
+
+
+ADAM: 
+# keypad for selecting mode/ entering input
+LCD screen for screening
+
+
+
+DANMAN:
+# servo for water control
+# motor for fan usage
+# LCD output
+# moist sensor
+
+
+__ documentation 
+todo __
+explain that servo is connected to water valve to turn it on 
