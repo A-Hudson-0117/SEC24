@@ -61,16 +61,16 @@ bool alarm_state_flag = false;
 // ============================ //
 //     PIN DECLARE
 // ============================ //
-#define OUT_WATER_PIN 9
-#define OUT_FAN_PIN 0
-#define OUT_ALARM_PIN 0
-#define OUT_LED_PIN 0
+#define OUT_WATER_PIN 29
+#define OUT_FAN_PIN 25
+#define OUT_ALARM_PIN 28
+#define OUT_LED_PIN 50
 #define AOUT_MOIST_PIN A0
 
-#define IN_HUMID_PIN 3
-#define IN_TRAY_PIN 0
-#define IN_LIGHT_PIN 0
-#define IN_FLAME_PIN 0
+#define IN_HUMID_PIN 51
+#define IN_TRAY_PIN 24
+#define IN_LIGHT_PIN 38
+#define IN_FLAME_PIN 2
 
 
 // ============================ //
